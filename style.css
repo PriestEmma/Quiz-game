@@ -242,6 +242,10 @@ button.btn:hover {
     font-size: 0.8rem;
   }
 
+  .questions .questions-info {
+    margin: 0.8rem 0 1.3rem;
+  }
+
   button.btn {
     font-size: 1rem;
   }
