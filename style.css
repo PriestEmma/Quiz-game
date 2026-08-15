@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Root property */
+:root {
+  --primary-color: #e96a31;
+  --bar-color: #e76b34;
+  --bg-color: #f5f0e7;
+  --correct-color: #e8fff0;
+  --hover-correct: #7cc696;
+  --wrong-color: #fadfdf;
+  --hover-wrong: #f1d2d6;
+  --text-color: #686868;
+  --optn-color: #f9f0e6;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+  background: #f5f0e7;
+  padding: 1.2rem;
+}
+
+/* Button */
+button#btn {
+  padding: 0.8em 1.2em;
+  color: #fff;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: clamp(0.3rem, 3vw + 0.3rem, 1.3rem);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button#btn:hover {
+  background: #e45a1a;
+  transition: 0.2s ease;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.hero .hero-content {
+  display: block;
+  text-align: center;
+}
+
+.hero .hero-content.hide {
+  display: none;
+}
+
+.hero .hero-content p {
+  margin: 25px 0;
+}
+
+/* Questions */
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.questions .questions-content .questions-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.questions .questions-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 30px;
+}
+
+/* Progress */
+#progress {
+  width: 20%;
+  padding: 5px;
+  border: none;
+  background-color: var(--bar-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: var(--optn-color);
+}
+
+/* button */
+button.btn {
+  padding: 0.8em 1.2em;
+  color: #000;
+  background: var(--optn-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  border: 2px solid #ddd;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  text-align: start;
+}
+
+button.btn:hover {
+  background: #f2e7d1;
+  /* background: var(--wrong-color);
+  border: 1px solid var(--hover-wrong); */
+}
+
+.btn.correct,
+.btn.correct:hover {
+  background-color: #e6fff0;
+  border-color: #a3f0c4;
+  color: #28a745;
+}
+
+.btn.wrong,
+.btn.wrong:hover {
+  background-color: #fff0f0;
+  border-color: #ffbdbd;
+  color: #dc3545;
+}
+
+/* Text */
+.text-xxl {
+  font-weight: 800;
+  font-size: clamp(1.8rem, calc(5vw + 1rem), 2.8rem);
+  color: var(--bar-color);
+}
+
+.background {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  margin: 0.8rem 0;
+}
+
+#restart {
+  margin: 0.8rem 0;
+  padding: 0.8em 1.2em;
+  color: #fff;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: clamp(0.3rem, 3vw + 0.3rem, 1.3rem);
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    background: #e45a1a;
+    transition: 0.2s ease;
+  }
+}
+
+.text {
+  color: var(--bar-color);
+  font-size: clamp(1.3rem, 5vw + 1rem, 2.7rem);
+  text-align: center;
+}
+
+.text-p {
+  text-align: center;
+  font-size: clamp(0.4rem, 3vw + 0.3rem, 1.3rem);
+}
+
+.finish-text {
+  font-size: clamp(0.3rem, 4vw + 0.3rem, 1.3rem);
+  color: var(--bar-color);
+  font-weight: 700;
+  padding: 0.4rem 0 0.3rem;
+}
+
+.finish-content {
+  text-align: center;
+  display: none;
+}
+
+/* Custom Property */
+/* container  */
+.container-md {
+  display: none;
+  max-width: 500px;
+  padding: 40px 25px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-lg.active {
+  display: block;
+}
+
+.container-lg {
+  display: none;
+  max-width: 600px;
+  padding: 40px 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 500px) {
+  body {
+    line-height: 1.4;
+  }
+
+  .container-lg {
+    padding: 3.2rem 1.5rem;
+  }
+
+  .container-md {
+    width: 90%;
+  }
+
+  .hero p.text-md {
+    font-size: 0.9rem;
+    margin: 1em 0.3em;
+  }
+
+  .container-lg {
+    width: 90%;
+  }
+
+  .text-xl {
+    font-size: 1.3rem;
+  }
+
+  button.btn {
+    font-size: 1rem;
+  }
+}

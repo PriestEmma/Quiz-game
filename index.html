@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+
+  <body>
+    <div class="hero">
+      <div class="hero-content container-md">
+        <h1 class="text-xxl">Quiz Time!</h1>
+
+        <p class="text-md">Test your knowledge with these fun questions</p>
+
+        <button id="btn">Start Quiz</button>
+      </div>
+
+      <section class="questions">
+        <div class="questions-content container-lg">
+          <h2 class="text-xl" id="question-head"></h2>
+
+          <div class="questions-info">
+            <p class="text-sm" id="num">
+              Question :
+              <span id="current-question"></span> of
+              <span id="total-question">5</span>
+            </p>
+
+            <p class="text-sm">Score: <span id="score">0</span></p>
+          </div>
+
+          <div id="question-options">
+            <!-- <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button> -->
+          </div>
+
+          <div class="progress-bar">
+            <div id="progress"></div>
+          </div>
+        </div>
+
+        <div class="hero">
+          <div class="finish-content container-md">
+            <h1 class="text">Quiz Results</h1>
+
+            <div class="background">
+              <p class="text-p">
+                <!-- You scored <span id="score"></span> out of
+              <span id="maxNum"></span> -->
+              </p>
+              <p class="userScore finish-text"></p>
+            </div>
+
+            <button id="restart">Restart Quiz</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
