@@ -21,6 +21,11 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.3;
   background: #f5f0e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
   padding: 1.2rem;
 }
 
@@ -45,9 +50,6 @@ button#btn:hover {
 .hero {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  height: 100dvh;
 }
 
 .hero .hero-content {
@@ -64,13 +66,6 @@ button#btn:hover {
 }
 
 /* Questions */
-.questions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  height: 100dvh;
-}
 
 .questions .questions-content .questions-options {
   display: flex;
