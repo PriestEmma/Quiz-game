@@ -238,6 +238,10 @@ button.btn:hover {
     font-size: 1.3rem;
   }
 
+  .text-sm {
+    font-size: 0.8rem;
+  }
+
   button.btn {
     font-size: 1rem;
   }
