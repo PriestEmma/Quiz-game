@@ -47,10 +47,6 @@ button#btn:hover {
 }
 
 /* Hero */
-.hero {
-  display: flex;
-  justify-content: center;
-}
 
 .hero .hero-content {
   display: block;
@@ -205,6 +201,11 @@ button.btn:hover {
   background: #fff;
   border-radius: 15px;
   box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
