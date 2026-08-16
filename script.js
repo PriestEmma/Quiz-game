@@ -54,16 +54,17 @@ const container = document.querySelector('.container-lg');
 const question = document.getElementById('question-head');
 let questionScore = document.getElementById('score');
 const progress = document.getElementById('progress');
-
+const totalQuestion = document.getElementById('total-question');
 const quizOptions = document.getElementById('question-options');
 
 let currentQuestionInt = 0;
 let score = 0;
 let maxNum = quizQuestions.length - 1;
+totalQuestion.textContent = quizQuestions.length;
 
 function startQuiz(e) {
   container.classList.add('active');
-  document.querySelector('.questions-content').style.display = 'block';
+  document.querySelector('.questions').style.display = 'block';
   startContainer.style.display = 'none';
 
   displayQuestion();
@@ -77,7 +78,7 @@ function restartQuiz() {
   // Reset the Screens
   startContainer.style.display = 'block';
 
-  document.querySelector('.finish-content').style.display = 'none';
+  document.querySelector('.finish-container').style.display = 'none';
 
   // Reset Quiz values
   currentQuestionInt = 0;
@@ -174,9 +175,9 @@ function nextQuestion(isClicked) {
 }
 
 function QuizFinished() {
-  document.querySelector('.questions-content').style.display = 'none';
+  document.querySelector('.questions').style.display = 'none';
   document.querySelector('.hero-content').style.display = 'none';
-  document.querySelector('.finish-content').style.display = 'block';
+  document.querySelector('.finish-container').style.display = 'block';
 
   document.querySelector('.text-p').textContent =
     `You scored ${questionScore.textContent} out of ${quizQuestions.length}`;

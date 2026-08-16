@@ -24,15 +24,15 @@
         <button id="btn">Start Quiz</button>
       </div>
 
-      <section class="questions center">
-        <div class="questions-content container-lg">
+      <section class="questions center container-lg">
+        <div class="questions-content">
           <h2 class="text-xl" id="question-head"></h2>
 
           <div class="questions-info">
             <p class="text-sm" id="num">
               Question :
               <span id="current-question"></span> of
-              <span id="total-question">5</span>
+              <span id="total-question"></span>
             </p>
 
             <p class="text-sm">Score: <span id="score">0</span></p>
@@ -49,23 +49,23 @@
             <div id="progress"></div>
           </div>
         </div>
-
-        <div class="hero center">
-          <div class="finish-content container-md">
-            <h1 class="text">Quiz Results</h1>
-
-            <div class="background">
-              <p class="text-p">
-                <!-- You scored <span id="score"></span> out of
-              <span id="maxNum"></span> -->
-              </p>
-              <p class="userScore finish-text"></p>
-            </div>
-
-            <button id="restart">Restart Quiz</button>
-          </div>
-        </div>
       </section>
+
+      <div class="finish finish-container">
+        <div class="finish-content">
+          <h1 class="text">Quiz Results</h1>
+
+          <div class="background">
+            <p class="text-p">
+              <!-- You scored <span id="score"></span> out of
+              <span id="maxNum"></span> -->
+            </p>
+            <p class="userScore finish-text"></p>
+          </div>
+
+          <button id="restart">Restart Quiz</button>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
